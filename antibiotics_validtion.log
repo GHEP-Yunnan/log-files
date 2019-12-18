@@ -1,0 +1,623 @@
+-------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/amandali/Dropbox/GHEP-Yunnan Analysis/Yunnan Drug Data/data_file/
+> antibiotics_validtion.log
+  log type:  text
+ opened on:  27 Nov 2019, 01:15:13
+
+. 
+. use "Yunnan_deidentified.dta",clear
+
+. 
+. gen diarrhea_check=0
+
+. 
+. gen diarrhea_check2=0
+
+. 
+. replace diarrhea_check=1 in 33
+(1 real change made)
+
+. replace diarrhea_check2=1 in 33
+(1 real change made)
+
+. 
+. replace diarrhea_check=1 in 20
+(1 real change made)
+
+. replace diarrhea_check2=1 in 20
+(1 real change made)
+
+. 
+. 
+. replace diarrhea_check=1 in 39
+(1 real change made)
+
+. replace diarrhea_check2=1 in 39
+(1 real change made)
+
+. 
+. replace diarrhea_check=1 in 96
+(1 real change made)
+
+. replace diarrhea_check2=1 in 96
+(1 real change made)
+
+. 
+. replace diarrhea_check=1 in 99
+(1 real change made)
+
+. replace diarrhea_check2=1 in 99
+(1 real change made)
+
+. 
+. replace diarrhea_check=1 in 153
+(1 real change made)
+
+. replace diarrhea_check2=1 in 153
+(1 real change made)
+
+. 
+. 
+. replace diarrhea_check=1 in 167
+(1 real change made)
+
+. replace diarrhea_check2=1 in 167
+(1 real change made)
+
+. 
+. 
+. replace diarrhea_check=1 in 224
+(1 real change made)
+
+. replace diarrhea_check2=1 in 224
+(1 real change made)
+
+. 
+. replace diarrhea_check=1 in 238
+(1 real change made)
+
+. replace diarrhea_check2=1 in 238
+(1 real change made)
+
+. 
+. replace diarrhea_check=1 in 300
+(1 real change made)
+
+. replace diarrhea_check2=1 in 300
+(1 real change made)
+
+. 
+. replace diarrhea_check=1 in 365
+(1 real change made)
+
+. replace diarrhea_check2=1 in 365
+(1 real change made)
+
+. 
+. replace diarrhea_check=1 in 366
+(1 real change made)
+
+. replace diarrhea_check2=1 in 366
+(1 real change made)
+
+. 
+. 
+. replace diarrhea_check=1 in 361
+(1 real change made)
+
+. replace diarrhea_check2=1 in 361
+(1 real change made)
+
+. 
+. replace diarrhea_check=1 in 393
+(1 real change made)
+
+. replace diarrhea_check2=1 in 393
+(1 real change made)
+
+. 
+. 
+. gen agina_check=0
+
+. gen agina_check2=0
+
+. 
+. 
+. replace agina_check=1 in 27
+(1 real change made)
+
+. replace agina_check2=1 in 27
+(1 real change made)
+
+. 
+. replace agina_check=1 in 30
+(1 real change made)
+
+. replace agina_check2=1 in 30
+(1 real change made)
+
+. 
+. 
+. replace agina_check=1 in 31
+(1 real change made)
+
+. replace agina_check2=1 in 31
+(1 real change made)
+
+. 
+. 
+. replace agina_check=1 in 76
+(1 real change made)
+
+. 
+. replace agina_check=1 in 78
+(1 real change made)
+
+. replace agina_check2=1 in 78
+(1 real change made)
+
+. 
+. replace agina_check=1 in 83
+(1 real change made)
+
+. replace agina_check2=1 in 83
+(1 real change made)
+
+. 
+. replace agina_check=1 in 104
+(1 real change made)
+
+. replace agina_check2=1 in 104
+(1 real change made)
+
+. 
+. replace agina_check=1 in 107
+(1 real change made)
+
+. replace agina_check2=1 in 107
+(1 real change made)
+
+. 
+. replace agina_check=1 in 110
+(1 real change made)
+
+. replace agina_check2=1 in 110
+(1 real change made)
+
+. 
+. replace agina_check=1 in 111
+(1 real change made)
+
+. replace agina_check2=1 in 111
+(1 real change made)
+
+. 
+. replace agina_check=1 in 115
+(1 real change made)
+
+. replace agina_check2=1 in 115
+(1 real change made)
+
+. 
+. 
+. replace agina_check=1 in 132
+(1 real change made)
+
+. replace agina_check2=1 in 132
+(1 real change made)
+
+. 
+. replace agina_check=1 in 176
+(1 real change made)
+
+. replace agina_check2=1 in 176
+(1 real change made)
+
+. 
+. replace agina_check=1 in 179
+(1 real change made)
+
+. replace agina_check2=1 in 179
+(1 real change made)
+
+. 
+. replace agina_check=1 in 186
+(1 real change made)
+
+. replace agina_check2=1 in 186
+(1 real change made)
+
+. 
+. replace agina_check=1 in 209
+(1 real change made)
+
+. replace agina_check2=1 in 209
+(1 real change made)
+
+. 
+. replace agina_check=1 in 233
+(1 real change made)
+
+. replace agina_check2=1 in 233
+(1 real change made)
+
+. 
+. replace agina_check=1 in 256
+(1 real change made)
+
+. replace agina_check2=1 in 256
+(1 real change made)
+
+. 
+. replace agina_check=1 in 295
+(1 real change made)
+
+. replace agina_check2=1 in 295
+(1 real change made)
+
+. 
+. replace agina_check=1 in 324
+(1 real change made)
+
+. replace agina_check2=1 in 324
+(1 real change made)
+
+. 
+. replace agina_check=1 in 368
+(1 real change made)
+
+. replace agina_check2=1 in 368
+(1 real change made)
+
+. 
+. replace agina_check=1 in 379
+(1 real change made)
+
+. replace agina_check2=1 in 379
+(1 real change made)
+
+. 
+. replace agina_check=1 in 381
+(1 real change made)
+
+. replace agina_check2=1 in 381
+(1 real change made)
+
+. 
+. replace agina_check=1 in 401
+(1 real change made)
+
+. replace agina_check2=1 in 401
+(1 real change made)
+
+. 
+. gen asthma_check=0
+
+. gen asthma_check2=0
+
+. 
+. replace asthma_check=1 in 22
+(1 real change made)
+
+. replace asthma_check2=1 in 22
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 24
+(1 real change made)
+
+. replace asthma_check2=1 in 24
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 56
+(1 real change made)
+
+. replace asthma_check2=1 in 56
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 75
+(1 real change made)
+
+. replace asthma_check2=1 in 75
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 113
+(1 real change made)
+
+. replace asthma_check2=1 in 113
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 118
+(1 real change made)
+
+. replace asthma_check2=1 in 118
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 145
+(1 real change made)
+
+. replace asthma_check2=1 in 145
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 156
+(1 real change made)
+
+. replace asthma_check2=1 in 156
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 162
+(1 real change made)
+
+. replace asthma_check2=1 in 162
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 183
+(1 real change made)
+
+. replace asthma_check2=1 in 183
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 188
+(1 real change made)
+
+. replace asthma_check2=1 in 188
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 195
+(1 real change made)
+
+. replace asthma_check2=1 in 195
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 198
+(1 real change made)
+
+. replace asthma_check2=1 in 198
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 199
+(1 real change made)
+
+. replace asthma_check2=1 in 199
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 207
+(1 real change made)
+
+. replace asthma_check2=1 in 207
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 211
+(1 real change made)
+
+. replace asthma_check2=1 in 211
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 212
+(1 real change made)
+
+. replace asthma_check2=1 in 212
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 228
+(1 real change made)
+
+. replace asthma_check2=1 in 228
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 262
+(1 real change made)
+
+. replace asthma_check2=1 in 262
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 264
+(1 real change made)
+
+. replace asthma_check2=1 in 264
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 271
+(1 real change made)
+
+. replace asthma_check2=1 in 271
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 299
+(1 real change made)
+
+. replace asthma_check2=1 in 299
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 308
+(1 real change made)
+
+. replace asthma_check2=1 in 308
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 334
+(1 real change made)
+
+. replace asthma_check2=1 in 334
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 371
+(1 real change made)
+
+. replace asthma_check2=1 in 371
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 430
+(1 real change made)
+
+. replace asthma_check2=1 in 430
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 443
+(1 real change made)
+
+. replace asthma_check2=1 in 443
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 449
+(1 real change made)
+
+. replace asthma_check2=1 in 449
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 454
+(1 real change made)
+
+. replace asthma_check2=1 in 454
+(1 real change made)
+
+. 
+. replace asthma_check=1 in 469
+(1 real change made)
+
+. replace asthma_check2=1 in 469
+(1 real change made)
+
+. 
+. replace diarrhea_check=. if spv310_q8_17_0_2nd==""
+(364 real changes made, 364 to missing)
+
+. 
+. replace agina_check=. if spv320_q8_18_0_2nd==""
+(404 real changes made, 404 to missing)
+
+. 
+. 
+. 
+. replace asthma_check=. if spv330_q8_17_0_2nd==""
+(391 real changes made, 391 to missing)
+
+. 
+. 
+. 
+. replace diarrhea_check2=. if spv310_q8_17_0_2nd==""
+(364 real changes made, 364 to missing)
+
+. 
+. replace agina_check2=. if spv320_q8_18_0_2nd==""
+(404 real changes made, 404 to missing)
+
+. 
+. 
+. 
+. replace asthma_check2=. if spv330_q8_17_0_2nd==""
+(391 real changes made, 391 to missing)
+
+. 
+. 
+. tab diarrhea_check
+
+diarrhea_ch |
+        eck |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |         93       86.92       86.92
+          1 |         14       13.08      100.00
+------------+-----------------------------------
+      Total |        107      100.00
+
+. 
+. tab agina_check
+
+agina_check |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |         43       64.18       64.18
+          1 |         24       35.82      100.00
+------------+-----------------------------------
+      Total |         67      100.00
+
+. 
+. tab asthma_check
+
+asthma_chec |
+          k |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |         50       62.50       62.50
+          1 |         30       37.50      100.00
+------------+-----------------------------------
+      Total |         80      100.00
+
+. 
+. tab diarrhea_check2
+
+diarrhea_ch |
+       eck2 |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |         93       86.92       86.92
+          1 |         14       13.08      100.00
+------------+-----------------------------------
+      Total |        107      100.00
+
+. 
+. tab agina_check2
+
+agina_check |
+          2 |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |         44       65.67       65.67
+          1 |         23       34.33      100.00
+------------+-----------------------------------
+      Total |         67      100.00
+
+. 
+. tab asthma_check2
+
+asthma_chec |
+         k2 |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |         50       62.50       62.50
+          1 |         30       37.50      100.00
+------------+-----------------------------------
+      Total |         80      100.00
+
+. 
+. keep doc_form_code diarrhea_check agina_check asthma_check  diarrhea_check2 agina_c
+> heck2 asthma_check2 ///
+>  doc_form_code spv310_q8_17_* spv320_q8_18_0_2nd spv320_q8_18_0_2nd spv320_q8_18_1_
+> 2nd spv320_q8_18_2_2nd spv320_q8_18_3_2nd spv320_q8_18_4_2nd spv320_q8_18_5_2nd spv
+> 330_q8_17_*
+
+. 
+. save "Yunnan_deidentified_mediation.dta",replace
+file Yunnan_deidentified_mediation.dta saved
+
+. 
+. log close
+      name:  <unnamed>
+       log:  /Users/amandali/Dropbox/GHEP-Yunnan Analysis/Yunnan Drug Data/data_file/
+> antibiotics_validtion.log
+  log type:  text
+ closed on:  27 Nov 2019, 01:15:14
+-------------------------------------------------------------------------------------

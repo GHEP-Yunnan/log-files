@@ -1,0 +1,159 @@
+-------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/amandali/Dropbox/GHEP-Yunnan Analysis/Yunnan Drug Data/data_file/
+> doctor_level_SP.log
+  log type:  text
+ opened on:  27 Nov 2019, 01:16:50
+
+. 
+. use "Yunnan_deidentified_mediation.dta",clear
+
+. 
+. merge 1:m doc_form_code using "Yunnan_deidentified_regression_spv_wide"
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             2
+        from master                         0  (_merge==1)
+        from using                          2  (_merge==2)
+
+    matched                             3,166  (_merge==3)
+    -----------------------------------------
+
+. 
+. duplicates drop doc_form_code, force 
+
+Duplicates in terms of doc_form_code
+
+(2,696 observations deleted)
+
+. 
+. 
+. 
+. replace antibiotic_2=.
+(159 real changes made, 159 to missing)
+
+. 
+. replace antibiotic_2=0 if (diarrhea_check!=.|agina_check!=.|asthma_check!=.)
+(254 real changes made)
+
+. 
+. 
+. 
+. replace antibiotic_2=1 if (diarrhea_check==1|agina_check==1|asthma_check==1)
+(68 real changes made)
+
+. 
+. 
+. replace broad_anti_2=.
+(159 real changes made, 159 to missing)
+
+. 
+. replace broad_anti_2=0 if (diarrhea_check2!=.|agina_check2!=.|asthma_check2!=.)
+(254 real changes made)
+
+. 
+. 
+. 
+. replace broad_anti_2=1 if (diarrhea_check2==1|agina_check2==1|asthma_check2==1)
+(67 real changes made)
+
+. 
+. 
+. 
+. gen new_spv_310=0
+
+. 
+. gen new_spv_320=0
+
+. 
+. gen new_spv_330=0
+
+. 
+. 
+. replace new_spv_310=1 if diarrhea_check!=.
+(107 real changes made)
+
+. replace new_spv_320=1 if agina_check!=.
+(67 real changes made)
+
+. replace new_spv_330=1 if asthma_check!=.
+(80 real changes made)
+
+. 
+. 
+. replace new_spv_310=. if (diarrhea_check==.& agina_check==.& asthma_check==.)
+(218 real changes made, 218 to missing)
+
+. 
+. replace new_spv_320=. if (diarrhea_check==.& agina_check==.& asthma_check==.)
+(218 real changes made, 218 to missing)
+
+. 
+. replace new_spv_330=. if (diarrhea_check==.& agina_check==.& asthma_check==.)
+(218 real changes made, 218 to missing)
+
+. 
+. 
+. gen form_indicator=.
+(472 missing values generated)
+
+. 
+. replace form_indicator=310 if new_spv_310==1
+(107 real changes made)
+
+. 
+. replace form_indicator=320 if new_spv_320==1
+(67 real changes made)
+
+. 
+. replace form_indicator=330 if new_spv_330==1
+(80 real changes made)
+
+. 
+. 
+. 
+. label var diarrhea_check "abx validation for diarrhea"
+
+. label var diarrhea_check2 "broad_abx validation for diarrhea"
+
+. 
+. 
+. 
+. label var agina_check "abx validation for agina"
+
+. label var agina_check2 "broad_abx validation for agina"
+
+. 
+. label var asthma_check "abx validation for asthma"
+
+. label var asthma_check2 "broad_abx validation for asthma"
+
+. 
+. 
+. label var new_spv_310 "does the doc see SP 310 (yes=1 no=0)  "
+
+. label var new_spv_320 "does the doc see SP 320 (yes=1 no=0)  "
+
+. label var new_spv_330 "does the doc see SP 330 (yes=1 no=0) " 
+
+. 
+. 
+. label var form_indicator "which SP the doctor see"
+
+. 
+. drop if doc_form_code==""
+(1 observation deleted)
+
+. 
+. save "Yunnan_deidentified_spv_doctorlevel",replace
+file Yunnan_deidentified_spv_doctorlevel.dta saved
+
+. 
+. log close
+      name:  <unnamed>
+       log:  /Users/amandali/Dropbox/GHEP-Yunnan Analysis/Yunnan Drug Data/data_file/
+> doctor_level_SP.log
+  log type:  text
+ closed on:  27 Nov 2019, 01:16:50
+-------------------------------------------------------------------------------------

@@ -1,0 +1,2058 @@
+-------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/amandali/Dropbox/GHEP-Yunnan Analysis/Yunnan Drug Data/data_file/
+> spv_doc_level/abx_mark.log
+  log type:  text
+ opened on:  17 Dec 2019, 12:49:21
+
+. use "/Users/amandali/Dropbox/GHEP-Yunnan Analysis/Yunnan Drug Data/data_file/spv_do
+> c_level/Yunnan_deidentified_spv_doctorlevel.dta",clear
+
+. 
+. 
+. 
+. 
+. gen abx_name_310=""
+(471 missing values generated)
+
+. gen abx_name_320=""
+(471 missing values generated)
+
+. gen abx_name_330=""
+(471 missing values generated)
+
+. 
+. 
+. 
+.         forvalue i=0/4{
+  2. 
+. 
+. replace abx_name_310="吉他霉素片" if       spv310_q8_17_`i'_2nd=="吉他霉素片"
+  3. replace abx_name_310="吉霉素" if     spv310_q8_17_`i'_2nd=="吉霉素" 
+  4. replace abx_name_310="头孢克肟胶囊" if    spv310_q8_17_`i'_2nd=="头孢克肟胶囊"
+  5. replace abx_name_310="头孢拉定胶囊" if    spv310_q8_17_`i'_2nd=="头孢拉定胶囊"
+  6. replace abx_name_310="头孢氨苄胶囊" if    spv310_q8_17_`i'_2nd=="头孢氨苄胶囊"
+  7. replace abx_name_310="头孢氨苄颗粒" if    spv310_q8_17_`i'_2nd=="头孢氨苄颗粒"
+  8. replace abx_name_310="庆大霉素普鲁卡因维B12颗粒" if  spv310_q8_17_`i'_2nd=="庆大
+> 霉素普鲁卡因维B12颗粒"
+  9. replace abx_name_310="盐酸左氧氟沙星胶囊" if   spv310_q8_17_`i'_2nd=="盐酸左氧氟
+> 沙星胶囊"
+ 10. replace abx_name_310="硫酸庆大霉素" if    spv310_q8_17_`i'_2nd=="硫酸庆大霉素"
+ 11. replace abx_name_310="硫酸庆大霉素注射液" if   spv310_q8_17_`i'_2nd=="硫酸庆大霉
+> 素注射液"
+ 12. replace abx_name_310="硫酸庆大霉素颗粒" if      spv310_q8_17_`i'_2nd=="硫酸庆大
+> 霉素颗粒"
+ 13. replace abx_name_310="罗红霉素分散片" if         spv310_q8_17_`i'_2nd=="罗红霉素
+> 分散片"
+ 14. replace abx_name_310="螺旋霉素" if  spv310_q8_17_`i'_2nd=="螺旋霉素"
+ 15. replace abx_name_310="诺氟沙星胶囊" if    spv310_q8_17_`i'_2nd=="诺氟沙星胶囊"
+ 16. replace abx_name_310="阿奇霉素片" if       spv310_q8_17_`i'_2nd=="阿奇霉素片"
+ 17. replace abx_name_310="阿莫西林" if  spv310_q8_17_`i'_2nd=="阿莫西林"
+ 18. replace abx_name_310="阿莫西林克拉维酸钾干混悬剂" if       spv310_q8_17_`i'_2nd=
+> ="阿莫西林克拉维酸钾干混悬剂"
+ 19. replace abx_name_310="阿莫西林克拉维酸钾片" if        spv310_q8_17_`i'_2nd=="阿
+> 莫西林克拉维酸钾片"
+ 20. replace abx_name_310="阿莫西林克拉维酸钾胶囊" if     spv310_q8_17_`i'_2nd=="阿莫
+> 西林克拉维酸钾胶囊"
+ 21. replace abx_name_310="阿莫西林胶囊" if    spv310_q8_17_`i'_2nd=="阿莫西林胶囊"
+ 22. replace abx_name_310="阿莫西林那克拉维酸钾" if        spv310_q8_17_`i'_2nd=="阿
+> 莫西林那克拉维酸钾"
+ 23. replace abx_name_310="阿莫西林颗粒" if    spv310_q8_17_`i'_2nd=="阿莫西林颗粒"
+ 24. replace abx_name_310="青霉素V钾片" if      spv310_q8_17_`i'_2nd=="青霉素V钾片"
+ 25. replace abx_name_310="青霉素V钾胶囊" if   spv310_q8_17_`i'_2nd=="青霉素V钾胶囊"
+ 26. replace abx_name_310="颠茄磺苄啶片" if    spv310_q8_17_`i'_2nd=="颠茄磺苄啶片"
+ 27. replace abx_name_310="乙酰螺旋霉素" if    spv310_q8_17_`i'_2nd=="乙酰螺旋霉素"
+ 28. replace abx_name_310="乳酸左氧氟沙星氯化钠注射液" if       spv310_q8_17_`i'_2nd=
+> ="乳酸左氧氟沙星氯化钠注射液"
+ 29. replace abx_name_310="克拉霉素" if  spv310_q8_17_`i'_2nd=="克拉霉素"
+ 30. replace abx_name_310="克林霉素" if  spv310_q8_17_`i'_2nd=="克林霉素"
+ 31. replace abx_name_310="克林霉素磷酸酯" if         spv310_q8_17_`i'_2nd=="克林霉素
+> 磷酸酯"
+ 32. replace abx_name_310="吉他霉素" if  spv310_q8_17_`i'_2nd=="吉他霉素"
+ 33. replace abx_name_310="呋喃唑酮" if  spv310_q8_17_`i'_2nd=="呋喃唑酮"
+ 34. replace abx_name_310="呋喃妥因" if  spv310_q8_17_`i'_2nd=="呋喃妥因"
+ 35. replace abx_name_310="呋布西林" if  spv310_q8_17_`i'_2nd=="呋布西林"
+ 36. replace abx_name_310="呋布西林钠" if       spv310_q8_17_`i'_2nd=="呋布西林钠"
+ 37. replace abx_name_310="四环素" if     spv310_q8_17_`i'_2nd=="四环素"
+ 38. replace abx_name_310="土霉素" if     spv310_q8_17_`i'_2nd=="土霉素"
+ 39. replace abx_name_310="复方磺胺甲噁唑" if         spv310_q8_17_`i'_2nd=="复方磺胺
+> 甲噁唑"
+ 40. replace abx_name_310="头孢他啶" if  spv310_q8_17_`i'_2nd=="头孢他啶"
+ 41. replace abx_name_310="头孢克肟" if  spv310_q8_17_`i'_2nd=="头孢克肟"
+ 42. replace abx_name_310="头孢克肟钠" if       spv310_q8_17_`i'_2nd=="头孢克肟钠"
+ 43. replace abx_name_310="头孢匹胺" if  spv310_q8_17_`i'_2nd=="头孢匹胺"
+ 44. replace abx_name_310="头孢呋辛" if  spv310_q8_17_`i'_2nd=="头孢呋辛"
+ 45. replace abx_name_310="头孢呋辛酯" if       spv310_q8_17_`i'_2nd=="头孢呋辛酯"
+ 46. replace abx_name_310="头孢呋辛钠" if       spv310_q8_17_`i'_2nd=="头孢呋辛钠"
+ 47. replace abx_name_310="头孢哌酮" if  spv310_q8_17_`i'_2nd=="头孢哌酮"
+ 48. replace abx_name_310="头孢哌酮钠舒巴坦钠" if   spv310_q8_17_`i'_2nd=="头孢哌酮钠
+> 舒巴坦钠"
+ 49. replace abx_name_310="头孢唑林钠" if       spv310_q8_17_`i'_2nd=="头孢唑林钠"
+ 50. replace abx_name_310="头孢噻肟钠" if       spv310_q8_17_`i'_2nd=="头孢噻肟钠"
+ 51. replace abx_name_310="头孢拉定" if  spv310_q8_17_`i'_2nd=="头孢拉定"
+ 52. replace abx_name_310="头孢曲松" if  spv310_q8_17_`i'_2nd=="头孢曲松"
+ 53. replace abx_name_310="头孢曲松钠" if       spv310_q8_17_`i'_2nd=="头孢曲松钠"
+ 54. replace abx_name_310="头孢氨苄" if  spv310_q8_17_`i'_2nd=="头孢氨苄"
+ 55. replace abx_name_310="头孢硫脒" if  spv310_q8_17_`i'_2nd=="头孢硫脒"
+ 56. replace abx_name_310="头孢菌素" if  spv310_q8_17_`i'_2nd=="头孢菌素"
+ 57. replace abx_name_310="小儿庆大霉素" if    spv310_q8_17_`i'_2nd=="小儿庆大霉素"
+ 58. replace abx_name_310="小诺霉素" if  spv310_q8_17_`i'_2nd=="小诺霉素"
+ 59. replace abx_name_310="左氧氟沙星" if       spv310_q8_17_`i'_2nd=="左氧氟沙星"
+ 60. replace abx_name_310="庆大霉素" if  spv310_q8_17_`i'_2nd=="庆大霉素"
+ 61. replace abx_name_310="异烟肼" if     spv310_q8_17_`i'_2nd=="异烟肼"
+ 62. replace abx_name_310="替硝唑" if     spv310_q8_17_`i'_2nd=="替硝唑"
+ 63. replace abx_name_310="替硝唑氯化钠注射液" if   spv310_q8_17_`i'_2nd=="替硝唑氯化
+> 钠注射液"
+ 64. replace abx_name_310="林可霉素" if  spv310_q8_17_`i'_2nd=="林可霉素"
+ 65. replace abx_name_310="氧氟沙星" if  spv310_q8_17_`i'_2nd=="氧氟沙星"
+ 66. replace abx_name_310="氨苄西林" if  spv310_q8_17_`i'_2nd=="氨苄西林"
+ 67. replace abx_name_310="氨苄西林钠" if       spv310_q8_17_`i'_2nd=="氨苄西林钠"
+ 68. replace abx_name_310="氯霉素" if     spv310_q8_17_`i'_2nd=="氯霉素"
+ 69. replace abx_name_310="琥乙红霉素" if       spv310_q8_17_`i'_2nd=="琥乙红霉素"
+ 70. replace abx_name_310="甲硝唑" if     spv310_q8_17_`i'_2nd=="甲硝唑"
+ 71. replace abx_name_310="甲硝唑氯化钠注射液" if   spv310_q8_17_`i'_2nd=="甲硝唑氯化
+> 钠注射液"
+ 72. replace abx_name_310="白霉素" if     spv310_q8_17_`i'_2nd=="白霉素"
+ 73. replace abx_name_310="盐酸克林霉素" if    spv310_q8_17_`i'_2nd=="盐酸克林霉素"
+ 74. replace abx_name_310="盐酸克林霉素氯化钠注射液" if  spv310_q8_17_`i'_2nd=="盐酸
+> 克林霉素氯化钠注射液"
+ 75. replace abx_name_310="盐酸左氧氟沙星" if         spv310_q8_17_`i'_2nd=="盐酸左氧
+> 氟沙星"
+ 76. replace abx_name_310="盐酸左氧氟沙星氯化钠注射液" if       spv310_q8_17_`i'_2nd=
+> ="盐酸左氧氟沙星氯化钠注射液"
+ 77. replace abx_name_310="盐酸林可霉素" if    spv310_q8_17_`i'_2nd=="盐酸林可霉素"
+ 78. replace abx_name_310="硫酸小诺霉素" if    spv310_q8_17_`i'_2nd=="硫酸小诺霉素"
+ 79. replace abx_name_310="硫酸阿米卡星" if    spv310_q8_17_`i'_2nd=="硫酸阿米卡星"
+ 80. replace abx_name_310="硫酸阿米卡星氯化钠注射液" if  spv310_q8_17_`i'_2nd=="硫酸
+> 阿米卡星氯化钠注射液"
+ 81. replace abx_name_310="磺胺甲噁唑" if       spv310_q8_17_`i'_2nd=="磺胺甲噁唑"
+ 82. replace abx_name_310="红霉素" if     spv310_q8_17_`i'_2nd=="红霉素"
+ 83. replace abx_name_310="罗红霉素" if  spv310_q8_17_`i'_2nd=="罗红霉素"
+ 84. replace abx_name_310="诺氟沙星" if  spv310_q8_17_`i'_2nd=="诺氟沙星"
+ 85. replace abx_name_310="阿奇霉素" if  spv310_q8_17_`i'_2nd=="阿奇霉素"
+ 86. replace abx_name_310="阿米卡星" if  spv310_q8_17_`i'_2nd=="阿米卡星"
+ 87. replace abx_name_310="阿莫西林克拉维酸钾" if   spv310_q8_17_`i'_2nd=="阿莫西林克
+> 拉维酸钾"
+ 88. replace abx_name_310="阿莫西林钠克拉维酸钾" if        spv310_q8_17_`i'_2nd=="阿
+> 莫西林钠克拉维酸钾"
+ 89. replace abx_name_310="青霉素" if     spv310_q8_17_`i'_2nd=="青霉素"
+ 90. replace abx_name_310="青霉素V钾" if         spv310_q8_17_`i'_2nd=="青霉素V钾"
+ 91. replace abx_name_310="青霉素钠" if  spv310_q8_17_`i'_2nd=="青霉素钠"
+ 92. replace abx_name_310="颠茄磺苄啶" if       spv310_q8_17_`i'_2nd=="颠茄磺苄啶"
+ 93. replace abx_name_310="麦迪霉素" if  spv310_q8_17_`i'_2nd=="麦迪霉素"
+ 94. replace abx_name_310="黄藤素" if     spv310_q8_17_`i'_2nd=="黄藤素"
+ 95. replace abx_name_310="颠茄磺苄碇片" if spv310_q8_17_`i'_2nd=="颠茄磺苄碇片"
+ 96.         
+. }
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+variable abx_name_310 was str1 now str27
+(1 real change made)
+(2 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(1 real change made)
+variable abx_name_310 was str27 now str36
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(3 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+variable abx_name_310 was str36 now str39
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+
+. 
+. 
+. forvalue i=0/5{
+  2. 
+. 
+. replace abx_name_320="吉他霉素片" if       spv320_q8_18_`i'_2nd=="吉他霉素片"
+  3. replace abx_name_320="吉霉素" if     spv320_q8_18_`i'_2nd=="吉霉素" 
+  4. replace abx_name_320="头孢克肟胶囊" if    spv320_q8_18_`i'_2nd=="头孢克肟胶囊"
+  5. replace abx_name_320="头孢拉定胶囊" if    spv320_q8_18_`i'_2nd=="头孢拉定胶囊"
+  6. replace abx_name_320="头孢氨苄胶囊" if    spv320_q8_18_`i'_2nd=="头孢氨苄胶囊"
+  7. replace abx_name_320="头孢氨苄颗粒" if    spv320_q8_18_`i'_2nd=="头孢氨苄颗粒"
+  8. replace abx_name_320="庆大霉素普鲁卡因维B12颗粒" if  spv320_q8_18_`i'_2nd=="庆大
+> 霉素普鲁卡因维B12颗粒"
+  9. replace abx_name_320="盐酸左氧氟沙星胶囊" if   spv320_q8_18_`i'_2nd=="盐酸左氧氟
+> 沙星胶囊"
+ 10. replace abx_name_320="硫酸庆大霉素" if    spv320_q8_18_`i'_2nd=="硫酸庆大霉素"
+ 11. replace abx_name_320="硫酸庆大霉素注射液" if   spv320_q8_18_`i'_2nd=="硫酸庆大霉
+> 素注射液"
+ 12. replace abx_name_320="硫酸庆大霉素颗粒" if      spv320_q8_18_`i'_2nd=="硫酸庆大
+> 霉素颗粒"
+ 13. replace abx_name_320="罗红霉素分散片" if         spv320_q8_18_`i'_2nd=="罗红霉素
+> 分散片"
+ 14. replace abx_name_320="螺旋霉素" if  spv320_q8_18_`i'_2nd=="螺旋霉素"
+ 15. replace abx_name_320="诺氟沙星胶囊" if    spv320_q8_18_`i'_2nd=="诺氟沙星胶囊"
+ 16. replace abx_name_320="阿奇霉素片" if       spv320_q8_18_`i'_2nd=="阿奇霉素片"
+ 17. replace abx_name_320="阿莫西林" if  spv320_q8_18_`i'_2nd=="阿莫西林"
+ 18. replace abx_name_320="阿莫西林克拉维酸钾干混悬剂" if       spv320_q8_18_`i'_2nd=
+> ="阿莫西林克拉维酸钾干混悬剂"
+ 19. replace abx_name_320="阿莫西林克拉维酸钾片" if        spv320_q8_18_`i'_2nd=="阿
+> 莫西林克拉维酸钾片"
+ 20. replace abx_name_320="阿莫西林克拉维酸钾胶囊" if     spv320_q8_18_`i'_2nd=="阿莫
+> 西林克拉维酸钾胶囊"
+ 21. replace abx_name_320="阿莫西林胶囊" if    spv320_q8_18_`i'_2nd=="阿莫西林胶囊"
+ 22. replace abx_name_320="阿莫西林那克拉维酸钾" if        spv320_q8_18_`i'_2nd=="阿
+> 莫西林那克拉维酸钾"
+ 23. replace abx_name_320="阿莫西林颗粒" if    spv320_q8_18_`i'_2nd=="阿莫西林颗粒"
+ 24. replace abx_name_320="青霉素V钾片" if      spv320_q8_18_`i'_2nd=="青霉素V钾片"
+ 25. replace abx_name_320="青霉素V钾胶囊" if   spv320_q8_18_`i'_2nd=="青霉素V钾胶囊"
+ 26. replace abx_name_320="颠茄磺苄啶片" if    spv320_q8_18_`i'_2nd=="颠茄磺苄啶片"
+ 27. replace abx_name_320="乙酰螺旋霉素" if    spv320_q8_18_`i'_2nd=="乙酰螺旋霉素"
+ 28. replace abx_name_320="乳酸左氧氟沙星氯化钠注射液" if       spv320_q8_18_`i'_2nd=
+> ="乳酸左氧氟沙星氯化钠注射液"
+ 29. replace abx_name_320="克拉霉素" if  spv320_q8_18_`i'_2nd=="克拉霉素"
+ 30. replace abx_name_320="克林霉素" if  spv320_q8_18_`i'_2nd=="克林霉素"
+ 31. replace abx_name_320="克林霉素磷酸酯" if         spv320_q8_18_`i'_2nd=="克林霉素
+> 磷酸酯"
+ 32. replace abx_name_320="吉他霉素" if  spv320_q8_18_`i'_2nd=="吉他霉素"
+ 33. replace abx_name_320="呋喃唑酮" if  spv320_q8_18_`i'_2nd=="呋喃唑酮"
+ 34. replace abx_name_320="呋喃妥因" if  spv320_q8_18_`i'_2nd=="呋喃妥因"
+ 35. replace abx_name_320="呋布西林" if  spv320_q8_18_`i'_2nd=="呋布西林"
+ 36. replace abx_name_320="呋布西林钠" if       spv320_q8_18_`i'_2nd=="呋布西林钠"
+ 37. replace abx_name_320="四环素" if     spv320_q8_18_`i'_2nd=="四环素"
+ 38. replace abx_name_320="土霉素" if     spv320_q8_18_`i'_2nd=="土霉素"
+ 39. replace abx_name_320="复方磺胺甲噁唑" if         spv320_q8_18_`i'_2nd=="复方磺胺
+> 甲噁唑"
+ 40. replace abx_name_320="头孢他啶" if  spv320_q8_18_`i'_2nd=="头孢他啶"
+ 41. replace abx_name_320="头孢克肟" if  spv320_q8_18_`i'_2nd=="头孢克肟"
+ 42. replace abx_name_320="头孢克肟钠" if       spv320_q8_18_`i'_2nd=="头孢克肟钠"
+ 43. replace abx_name_320="头孢匹胺" if  spv320_q8_18_`i'_2nd=="头孢匹胺"
+ 44. replace abx_name_320="头孢呋辛" if  spv320_q8_18_`i'_2nd=="头孢呋辛"
+ 45. replace abx_name_320="头孢呋辛酯" if       spv320_q8_18_`i'_2nd=="头孢呋辛酯"
+ 46. replace abx_name_320="头孢呋辛钠" if       spv320_q8_18_`i'_2nd=="头孢呋辛钠"
+ 47. replace abx_name_320="头孢哌酮" if  spv320_q8_18_`i'_2nd=="头孢哌酮"
+ 48. replace abx_name_320="头孢哌酮钠舒巴坦钠" if   spv320_q8_18_`i'_2nd=="头孢哌酮钠
+> 舒巴坦钠"
+ 49. replace abx_name_320="头孢唑林钠" if       spv320_q8_18_`i'_2nd=="头孢唑林钠"
+ 50. replace abx_name_320="头孢噻肟钠" if       spv320_q8_18_`i'_2nd=="头孢噻肟钠"
+ 51. replace abx_name_320="头孢拉定" if  spv320_q8_18_`i'_2nd=="头孢拉定"
+ 52. replace abx_name_320="头孢曲松" if  spv320_q8_18_`i'_2nd=="头孢曲松"
+ 53. replace abx_name_320="头孢曲松钠" if       spv320_q8_18_`i'_2nd=="头孢曲松钠"
+ 54. replace abx_name_320="头孢氨苄" if  spv320_q8_18_`i'_2nd=="头孢氨苄"
+ 55. replace abx_name_320="头孢硫脒" if  spv320_q8_18_`i'_2nd=="头孢硫脒"
+ 56. replace abx_name_320="头孢菌素" if  spv320_q8_18_`i'_2nd=="头孢菌素"
+ 57. replace abx_name_320="小儿庆大霉素" if    spv320_q8_18_`i'_2nd=="小儿庆大霉素"
+ 58. replace abx_name_320="小诺霉素" if  spv320_q8_18_`i'_2nd=="小诺霉素"
+ 59. replace abx_name_320="左氧氟沙星" if       spv320_q8_18_`i'_2nd=="左氧氟沙星"
+ 60. replace abx_name_320="庆大霉素" if  spv320_q8_18_`i'_2nd=="庆大霉素"
+ 61. replace abx_name_320="异烟肼" if     spv320_q8_18_`i'_2nd=="异烟肼"
+ 62. replace abx_name_320="替硝唑" if     spv320_q8_18_`i'_2nd=="替硝唑"
+ 63. replace abx_name_320="替硝唑氯化钠注射液" if   spv320_q8_18_`i'_2nd=="替硝唑氯化
+> 钠注射液"
+ 64. replace abx_name_320="林可霉素" if  spv320_q8_18_`i'_2nd=="林可霉素"
+ 65. replace abx_name_320="氧氟沙星" if  spv320_q8_18_`i'_2nd=="氧氟沙星"
+ 66. replace abx_name_320="氨苄西林胶囊" if    spv320_q8_18_`i'_2nd=="氨苄西林胶囊"
+ 67. replace abx_name_320="氨苄西林" if  spv320_q8_18_`i'_2nd=="氨苄西林"
+ 68. replace abx_name_320="氨苄西林钠" if       spv320_q8_18_`i'_2nd=="氨苄西林钠"
+ 69. replace abx_name_320="氯霉素" if     spv320_q8_18_`i'_2nd=="氯霉素"
+ 70. replace abx_name_320="琥乙红霉素" if       spv320_q8_18_`i'_2nd=="琥乙红霉素"
+ 71. replace abx_name_320="甲硝唑" if     spv320_q8_18_`i'_2nd=="甲硝唑"
+ 72. replace abx_name_320="甲硝唑氯化钠注射液" if   spv320_q8_18_`i'_2nd=="甲硝唑氯化
+> 钠注射液"
+ 73. replace abx_name_320="白霉素" if     spv320_q8_18_`i'_2nd=="白霉素"
+ 74. replace abx_name_320="盐酸克林霉素" if    spv320_q8_18_`i'_2nd=="盐酸克林霉素"
+ 75. replace abx_name_320="盐酸克林霉素氯化钠注射液" if  spv320_q8_18_`i'_2nd=="盐酸
+> 克林霉素氯化钠注射液"
+ 76. replace abx_name_320="盐酸左氧氟沙星" if         spv320_q8_18_`i'_2nd=="盐酸左氧
+> 氟沙星"
+ 77. replace abx_name_320="盐酸左氧氟沙星氯化钠注射液" if       spv320_q8_18_`i'_2nd=
+> ="盐酸左氧氟沙星氯化钠注射液"
+ 78. replace abx_name_320="盐酸林可霉素" if    spv320_q8_18_`i'_2nd=="盐酸林可霉素"
+ 79. replace abx_name_320="硫酸小诺霉素" if    spv320_q8_18_`i'_2nd=="硫酸小诺霉素"
+ 80. replace abx_name_320="硫酸阿米卡星" if    spv320_q8_18_`i'_2nd=="硫酸阿米卡星"
+ 81. replace abx_name_320="硫酸阿米卡星氯化钠注射液" if  spv320_q8_18_`i'_2nd=="硫酸
+> 阿米卡星氯化钠注射液"
+ 82. replace abx_name_320="磺胺甲噁唑" if       spv320_q8_18_`i'_2nd=="磺胺甲噁唑"
+ 83. replace abx_name_320="红霉素" if     spv320_q8_18_`i'_2nd=="红霉素"
+ 84. replace abx_name_320="罗红霉素" if  spv320_q8_18_`i'_2nd=="罗红霉素"
+ 85. replace abx_name_320="诺氟沙星" if  spv320_q8_18_`i'_2nd=="诺氟沙星"
+ 86. replace abx_name_320="阿奇霉素" if  spv320_q8_18_`i'_2nd=="阿奇霉素"
+ 87. replace abx_name_320="阿米卡星" if  spv320_q8_18_`i'_2nd=="阿米卡星"
+ 88. replace abx_name_320="阿莫西林克拉维酸钾" if   spv320_q8_18_`i'_2nd=="阿莫西林克
+> 拉维酸钾"
+ 89. replace abx_name_320="阿莫西林钠克拉维酸钾" if        spv320_q8_18_`i'_2nd=="阿
+> 莫西林钠克拉维酸钾"
+ 90. replace abx_name_320="青霉素" if     spv320_q8_18_`i'_2nd=="青霉素"
+ 91. replace abx_name_320="青霉素V钾" if         spv320_q8_18_`i'_2nd=="青霉素V钾"
+ 92. replace abx_name_320="青霉素钠" if  spv320_q8_18_`i'_2nd=="青霉素钠"
+ 93. replace abx_name_320="颠茄磺苄啶" if       spv320_q8_18_`i'_2nd=="颠茄磺苄啶"
+ 94. replace abx_name_320="麦迪霉素" if  spv320_q8_18_`i'_2nd=="麦迪霉素"
+ 95. replace abx_name_320="黄藤素" if     spv320_q8_18_`i'_2nd=="黄藤素"
+ 96. replace abx_name_320="颠茄磺苄碇片" if spv320_q8_18_`i'_2nd=="颠茄磺苄碇片"
+ 97.         
+. }
+(0 real changes made)
+variable abx_name_320 was str1 now str9
+(1 real change made)
+variable abx_name_320 was str9 now str18
+(1 real change made)
+(0 real changes made)
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+variable abx_name_320 was str18 now str27
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(1 real change made)
+(0 real changes made)
+variable abx_name_320 was str27 now str30
+(1 real change made)
+variable abx_name_320 was str30 now str33
+(1 real change made)
+(7 real changes made)
+(0 real changes made)
+(0 real changes made)
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(2 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(2 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(2 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+
+. 
+. 
+. 
+. 
+. forvalue i=0/5{
+  2. 
+. 
+. replace abx_name_330="吉他霉素片" if       spv330_q8_17_`i'_2nd=="吉他霉素片"
+  3. replace abx_name_330="吉霉素" if     spv330_q8_17_`i'_2nd=="吉霉素" 
+  4. replace abx_name_330="头孢克肟胶囊" if    spv330_q8_17_`i'_2nd=="头孢克肟胶囊"
+  5. replace abx_name_330="头孢拉定胶囊" if    spv330_q8_17_`i'_2nd=="头孢拉定胶囊"
+  6. replace abx_name_330="头孢氨苄胶囊" if    spv330_q8_17_`i'_2nd=="头孢氨苄胶囊"
+  7. replace abx_name_330="头孢氨苄颗粒" if    spv330_q8_17_`i'_2nd=="头孢氨苄颗粒"
+  8. replace abx_name_330="庆大霉素普鲁卡因维B12颗粒" if  spv330_q8_17_`i'_2nd=="庆大
+> 霉素普鲁卡因维B12颗粒"
+  9. replace abx_name_330="盐酸左氧氟沙星胶囊" if   spv330_q8_17_`i'_2nd=="盐酸左氧氟
+> 沙星胶囊"
+ 10. replace abx_name_330="硫酸庆大霉素" if    spv330_q8_17_`i'_2nd=="硫酸庆大霉素"
+ 11. replace abx_name_330="硫酸庆大霉素注射液" if   spv330_q8_17_`i'_2nd=="硫酸庆大霉
+> 素注射液"
+ 12. replace abx_name_330="硫酸庆大霉素颗粒" if      spv330_q8_17_`i'_2nd=="硫酸庆大
+> 霉素颗粒"
+ 13. replace abx_name_330="罗红霉素分散片" if         spv330_q8_17_`i'_2nd=="罗红霉素
+> 分散片"
+ 14. replace abx_name_330="螺旋霉素" if  spv330_q8_17_`i'_2nd=="螺旋霉素"
+ 15. replace abx_name_330="诺氟沙星胶囊" if    spv330_q8_17_`i'_2nd=="诺氟沙星胶囊"
+ 16. replace abx_name_330="阿奇霉素片" if       spv330_q8_17_`i'_2nd=="阿奇霉素片"
+ 17. replace abx_name_330="阿莫西林" if  spv330_q8_17_`i'_2nd=="阿莫西林"
+ 18. replace abx_name_330="阿莫西林克拉维酸钾干混悬剂" if       spv330_q8_17_`i'_2nd=
+> ="阿莫西林克拉维酸钾干混悬剂"
+ 19. replace abx_name_330="阿莫西林克拉维酸钾片" if        spv330_q8_17_`i'_2nd=="阿
+> 莫西林克拉维酸钾片"
+ 20. replace abx_name_330="阿莫西林克拉维酸钾胶囊" if     spv330_q8_17_`i'_2nd=="阿莫
+> 西林克拉维酸钾胶囊"
+ 21. replace abx_name_330="阿莫西林胶囊" if    spv330_q8_17_`i'_2nd=="阿莫西林胶囊"
+ 22. replace abx_name_330="阿莫西林那克拉维酸钾" if        spv330_q8_17_`i'_2nd=="阿
+> 莫西林那克拉维酸钾"
+ 23. replace abx_name_330="阿莫西林颗粒" if    spv330_q8_17_`i'_2nd=="阿莫西林颗粒"
+ 24. replace abx_name_330="青霉素V钾片" if      spv330_q8_17_`i'_2nd=="青霉素V钾片"
+ 25. replace abx_name_330="青霉素V钾胶囊" if   spv330_q8_17_`i'_2nd=="青霉素V钾胶囊"
+ 26. replace abx_name_330="颠茄磺苄啶片" if    spv330_q8_17_`i'_2nd=="颠茄磺苄啶片"
+ 27. replace abx_name_330="乙酰螺旋霉素" if    spv330_q8_17_`i'_2nd=="乙酰螺旋霉素"
+ 28. replace abx_name_330="乳酸左氧氟沙星氯化钠注射液" if       spv330_q8_17_`i'_2nd=
+> ="乳酸左氧氟沙星氯化钠注射液"
+ 29. replace abx_name_330="克拉霉素" if  spv330_q8_17_`i'_2nd=="克拉霉素"
+ 30. replace abx_name_330="克林霉素" if  spv330_q8_17_`i'_2nd=="克林霉素"
+ 31. replace abx_name_330="克林霉素磷酸酯" if         spv330_q8_17_`i'_2nd=="克林霉素
+> 磷酸酯"
+ 32. replace abx_name_330="吉他霉素" if  spv330_q8_17_`i'_2nd=="吉他霉素"
+ 33. replace abx_name_330="呋喃唑酮" if  spv330_q8_17_`i'_2nd=="呋喃唑酮"
+ 34. replace abx_name_330="呋喃妥因" if  spv330_q8_17_`i'_2nd=="呋喃妥因"
+ 35. replace abx_name_330="呋布西林" if  spv330_q8_17_`i'_2nd=="呋布西林"
+ 36. replace abx_name_330="呋布西林钠" if       spv330_q8_17_`i'_2nd=="呋布西林钠"
+ 37. replace abx_name_330="四环素" if     spv330_q8_17_`i'_2nd=="四环素"
+ 38. replace abx_name_330="土霉素" if     spv330_q8_17_`i'_2nd=="土霉素"
+ 39. replace abx_name_330="复方磺胺甲噁唑" if         spv330_q8_17_`i'_2nd=="复方磺胺
+> 甲噁唑"
+ 40. replace abx_name_330="头孢他啶" if  spv330_q8_17_`i'_2nd=="头孢他啶"
+ 41. replace abx_name_330="头孢克肟" if  spv330_q8_17_`i'_2nd=="头孢克肟"
+ 42. replace abx_name_330="头孢克肟钠" if       spv330_q8_17_`i'_2nd=="头孢克肟钠"
+ 43. replace abx_name_330="头孢匹胺" if  spv330_q8_17_`i'_2nd=="头孢匹胺"
+ 44. replace abx_name_330="头孢呋辛" if  spv330_q8_17_`i'_2nd=="头孢呋辛"
+ 45. replace abx_name_330="头孢呋辛酯" if       spv330_q8_17_`i'_2nd=="头孢呋辛酯"
+ 46. replace abx_name_330="头孢呋辛钠" if       spv330_q8_17_`i'_2nd=="头孢呋辛钠"
+ 47. replace abx_name_330="头孢哌酮" if  spv330_q8_17_`i'_2nd=="头孢哌酮"
+ 48. replace abx_name_330="头孢哌酮钠舒巴坦钠" if   spv330_q8_17_`i'_2nd=="头孢哌酮钠
+> 舒巴坦钠"
+ 49. replace abx_name_330="头孢唑林钠" if       spv330_q8_17_`i'_2nd=="头孢唑林钠"
+ 50. replace abx_name_330="头孢噻肟钠" if       spv330_q8_17_`i'_2nd=="头孢噻肟钠"
+ 51. replace abx_name_330="头孢拉定" if  spv330_q8_17_`i'_2nd=="头孢拉定"
+ 52. replace abx_name_330="头孢曲松" if  spv330_q8_17_`i'_2nd=="头孢曲松"
+ 53. replace abx_name_330="头孢曲松钠" if       spv330_q8_17_`i'_2nd=="头孢曲松钠"
+ 54. replace abx_name_330="头孢氨苄" if  spv330_q8_17_`i'_2nd=="头孢氨苄"
+ 55. replace abx_name_330="头孢硫脒" if  spv330_q8_17_`i'_2nd=="头孢硫脒"
+ 56. replace abx_name_330="头孢菌素" if  spv330_q8_17_`i'_2nd=="头孢菌素"
+ 57. replace abx_name_330="小儿庆大霉素" if    spv330_q8_17_`i'_2nd=="小儿庆大霉素"
+ 58. replace abx_name_330="小诺霉素" if  spv330_q8_17_`i'_2nd=="小诺霉素"
+ 59. replace abx_name_330="左氧氟沙星" if       spv330_q8_17_`i'_2nd=="左氧氟沙星"
+ 60. replace abx_name_330="庆大霉素" if  spv330_q8_17_`i'_2nd=="庆大霉素"
+ 61. replace abx_name_330="异烟肼" if     spv330_q8_17_`i'_2nd=="异烟肼"
+ 62. replace abx_name_330="替硝唑" if     spv330_q8_17_`i'_2nd=="替硝唑"
+ 63. replace abx_name_330="替硝唑氯化钠注射液" if   spv330_q8_17_`i'_2nd=="替硝唑氯化
+> 钠注射液"
+ 64. replace abx_name_330="林可霉素" if  spv330_q8_17_`i'_2nd=="林可霉素"
+ 65. replace abx_name_330="氧氟沙星" if  spv330_q8_17_`i'_2nd=="氧氟沙星"
+ 66. replace abx_name_330="氨苄西林胶囊" if    spv330_q8_17_`i'_2nd=="氨苄西林胶囊"
+ 67. replace abx_name_330="氨苄西林" if  spv330_q8_17_`i'_2nd=="氨苄西林"
+ 68. replace abx_name_330="氨苄西林钠" if       spv330_q8_17_`i'_2nd=="氨苄西林钠"
+ 69. replace abx_name_330="氯霉素" if     spv330_q8_17_`i'_2nd=="氯霉素"
+ 70. replace abx_name_330="琥乙红霉素" if       spv330_q8_17_`i'_2nd=="琥乙红霉素"
+ 71. replace abx_name_330="甲硝唑" if     spv330_q8_17_`i'_2nd=="甲硝唑"
+ 72. replace abx_name_330="甲硝唑氯化钠注射液" if   spv330_q8_17_`i'_2nd=="甲硝唑氯化
+> 钠注射液"
+ 73. replace abx_name_330="白霉素" if     spv330_q8_17_`i'_2nd=="白霉素"
+ 74. replace abx_name_330="盐酸克林霉素" if    spv330_q8_17_`i'_2nd=="盐酸克林霉素"
+ 75. replace abx_name_330="盐酸克林霉素氯化钠注射液" if  spv330_q8_17_`i'_2nd=="盐酸
+> 克林霉素氯化钠注射液"
+ 76. replace abx_name_330="盐酸左氧氟沙星" if         spv330_q8_17_`i'_2nd=="盐酸左氧
+> 氟沙星"
+ 77. replace abx_name_330="盐酸左氧氟沙星氯化钠注射液" if       spv330_q8_17_`i'_2nd=
+> ="盐酸左氧氟沙星氯化钠注射液"
+ 78. replace abx_name_330="盐酸林可霉素" if    spv330_q8_17_`i'_2nd=="盐酸林可霉素"
+ 79. replace abx_name_330="硫酸小诺霉素" if    spv330_q8_17_`i'_2nd=="硫酸小诺霉素"
+ 80. replace abx_name_330="硫酸阿米卡星" if    spv330_q8_17_`i'_2nd=="硫酸阿米卡星"
+ 81. replace abx_name_330="硫酸阿米卡星氯化钠注射液" if  spv330_q8_17_`i'_2nd=="硫酸
+> 阿米卡星氯化钠注射液"
+ 82. replace abx_name_330="磺胺甲噁唑" if       spv330_q8_17_`i'_2nd=="磺胺甲噁唑"
+ 83. replace abx_name_330="红霉素" if     spv330_q8_17_`i'_2nd=="红霉素"
+ 84. replace abx_name_330="罗红霉素" if  spv330_q8_17_`i'_2nd=="罗红霉素"
+ 85. replace abx_name_330="诺氟沙星" if  spv330_q8_17_`i'_2nd=="诺氟沙星"
+ 86. replace abx_name_330="阿奇霉素" if  spv330_q8_17_`i'_2nd=="阿奇霉素"
+ 87. replace abx_name_330="阿米卡星" if  spv330_q8_17_`i'_2nd=="阿米卡星"
+ 88. replace abx_name_330="阿莫西林克拉维酸钾" if   spv330_q8_17_`i'_2nd=="阿莫西林克
+> 拉维酸钾"
+ 89. replace abx_name_330="阿莫西林钠克拉维酸钾" if        spv330_q8_17_`i'_2nd=="阿
+> 莫西林钠克拉维酸钾"
+ 90. replace abx_name_330="青霉素" if     spv330_q8_17_`i'_2nd=="青霉素"
+ 91. replace abx_name_330="青霉素V钾" if         spv330_q8_17_`i'_2nd=="青霉素V钾"
+ 92. replace abx_name_330="青霉素钠" if  spv330_q8_17_`i'_2nd=="青霉素钠"
+ 93. replace abx_name_330="颠茄磺苄啶" if       spv330_q8_17_`i'_2nd=="颠茄磺苄啶"
+ 94. replace abx_name_330="麦迪霉素" if  spv330_q8_17_`i'_2nd=="麦迪霉素"
+ 95. replace abx_name_330="黄藤素" if     spv330_q8_17_`i'_2nd=="黄藤素"
+ 96. replace abx_name_330="颠茄磺苄碇片" if spv330_q8_17_`i'_2nd=="颠茄磺苄碇片"
+ 97.         
+. }
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+variable abx_name_330 was str1 now str18
+(2 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(5 real changes made)
+variable abx_name_330 was str18 now str30
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(1 real change made)
+(0 real changes made)
+(1 real change made)
+(2 real changes made)
+(3 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(4 real changes made)
+(0 real changes made)
+(0 real changes made)
+(2 real changes made)
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(2 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(1 real change made)
+(1 real change made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+(0 real changes made)
+
+. 
+. 
+. gen abx_mark=""
+(471 missing values generated)
+
+. 
+. replace abx_mark=abx_name_310 if abx_name_310!=""
+variable abx_mark was str1 now str39
+(15 real changes made)
+
+. replace abx_mark=abx_name_320 if abx_name_320!=""
+(24 real changes made)
+
+. replace abx_mark=abx_name_330 if abx_name_330!=""
+(31 real changes made)
+
+. 
+. 
+. labe var abx_name_310 "the name of the antibiotics the doctor prescribes to SP310"
+
+. labe var abx_name_320 "the name of the antibiotics the doctor prescribes to SP320"
+
+. labe var abx_name_330 "the name of the antibiotics the doctor prescribes to SP330"
+
+. 
+. labe var abx_mark "the name of the antibiotics the doctor prescribes to SP"
+
+. 
+. 
+. save "/Users/amandali/Dropbox/GHEP-Yunnan Analysis/Yunnan Drug Data/data_file/spv_d
+> oc_level/Yunnan_deidentified_spv_doctorlevel.dta",replace
+file /Users/amandali/Dropbox/GHEP-Yunnan Analysis/Yunnan Drug Data/data_file/spv_doc_
+> level/Yunnan_deidentified_spv_doctorlevel.dta saved
+
+. log close
+      name:  <unnamed>
+       log:  /Users/amandali/Dropbox/GHEP-Yunnan Analysis/Yunnan Drug Data/data_file/
+> spv_doc_level/abx_mark.log
+  log type:  text
+ closed on:  17 Dec 2019, 12:49:21
+-------------------------------------------------------------------------------------
