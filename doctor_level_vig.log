@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/amandali/Dropbox/GHEP-Yunnan Analysis/Yunnan Drug Data/data_file/
+> vig_doc_level/doctor_level_vig.log
+  log type:  text
+ opened on:  17 Dec 2019, 13:21:22
+
+. use "/Users/amandali/Dropbox/GHEP-Yunnan Analysis/Yunnan Drug Data/data_file/vig_do
+> c_level/Yunnan_deidentified_vig",clear 
+
+. 
+. 
+.  egen antibiotics_indicator = count(1) if abx_2==1, by(doc_form_code)
+(2719 missing values generated)
+
+.  egen braod_abx_indicator=count(1) if broad_abx_2==1 , by(doc_form_code)
+(2801 missing values generated)
+
+. 
+. 
+. 
+. 
+. duplicates drop doc_form_code, force 
+
+Duplicates in terms of doc_form_code
+
+(2,696 observations deleted)
+
+. 
+. drop if  doc_form_code==""
+(1 observation deleted)
+
+. 
+. replace antibiotics_indicator=0 if antibiotics_indicator==.
+(406 real changes made)
+
+. replace braod_abx_indicator=0 if braod_abx_indicator==.
+(420 real changes made)
+
+. 
+. label var antibiotics_indicator "the total number of antibiotics this doctor prescr
+> ibed"
+
+. 
+. 
+. label var  braod_abx_indicator "the total number of braod-antibiotics this doctor p
+> rescribed"
+
+. 
+. save "/Users/amandali/Dropbox/GHEP-Yunnan Analysis/Yunnan Drug Data/data_file/vig_d
+> oc_level/Yunnan_deidentified_vig_doctorlevel",replace
+(note: file /Users/amandali/Dropbox/GHEP-Yunnan Analysis/Yunnan Drug Data/data_file/v
+> ig_doc_level/Yunnan_deidentified_vig_doctorlevel.dta not found)
+file /Users/amandali/Dropbox/GHEP-Yunnan Analysis/Yunnan Drug Data/data_file/vig_doc_
+> level/Yunnan_deidentified_vig_doctorlevel.dta saved
+
+. 
+. log close
+      name:  <unnamed>
+       log:  /Users/amandali/Dropbox/GHEP-Yunnan Analysis/Yunnan Drug Data/data_file/
+> vig_doc_level/doctor_level_vig.log
+  log type:  text
+ closed on:  17 Dec 2019, 13:21:22
+-------------------------------------------------------------------------------------

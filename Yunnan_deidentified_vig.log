@@ -1,0 +1,151 @@
+-------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/amandali/Dropbox/GHEP-Yunnan Analysis/Yunnan Drug Data/data_file/
+> vig_doc_level/Yunnan_deidentified_vig.log
+  log type:  text
+ opened on:  17 Dec 2019, 13:21:19
+
+. use "/Users/amandali/Dropbox/GHEP-Yunnan Analysis/Yunnan Drug Data/data_file/vig_do
+> c_level/Yunnan_deidentified_regression_new", clear 
+
+. 
+. keep  doc_form_code rot* pct_yes_111 pct_prob_111 pct_no_111 ///
+>  pct_yes_112 pct_prob_112 pct_no_112 rot120_q2_n1_1_1st_sd ///
+>  pct_yes_120 pct_prob_120 pct_no_120 rot130_q3_n1_1_1st_sd ///
+>  pct_yes_130 pct_prob_130 pct_no_130 rot140_q4_n1_1_1st_sd ///
+>  pct_yes_140 pct_prob_140 pct_no_140 rot510_q1_1_n1_1_2nd_sd ///
+>  pct_yes_510 pct_prob_510 pct_no_510  pct_yes_520 ///
+>  pct_prob_520 pct_no_520 pct_yes_530 pct_prob_530 pct_no_530 pct_yes_540 ///
+>  pct_prob_540 pct_no_540 pct_yes_prob_111 pct_yes_prob_112 pct_yes_prob_120 ///
+>  pct_yes_prob_130 pct_yes_prob_140 pct_yes_prob_510 pct_yes_prob_520 pct_yes_prob_5
+> 30 ///
+>  pct_yes_prob_540 doc_age_year_sd_1d doc_income_total bacteria pct_yes pct_prob pct
+> _no ///
+>  pct_yes_prob disease_case abx_2 broad_abx_2 risk_avs_std risk_aversion extrav_ind1
+>  ///
+>  agree_ind1 consc_ind1 neuro_ind1 open_ind1 doc_gender doc_edu doc_county time
+
+. 
+.  
+.  
+.  
+.  gen disease_case_comb=.
+(3,168 missing values generated)
+
+. 
+. replace disease_case_comb=1 if (disease_case==211 | disease_case==212)
+(383 real changes made)
+
+. 
+. replace disease_case_comb=2 if (disease_case== 221  | disease_case==222 |disease_ca
+> se==411 |disease_case==412)
+(791 real changes made)
+
+. 
+. replace disease_case_comb=3 if (disease_case==230)
+(383 real changes made)
+
+. 
+. replace disease_case_comb=4 if (disease_case==240 | disease_case==431 | disease_cas
+> e==432 )
+(792 real changes made)
+
+. 
+. replace disease_case_comb=5 if (disease_case==421 | disease_case==422)
+(408 real changes made)
+
+. 
+. replace disease_case_comb=6 if (disease_case==440)
+(409 real changes made)
+
+. 
+. 
+. label define disease_case_comb 1"Pharyngitis" 2"Diarrhea" ///
+>                                                   3"Hypertension" 4"Asthma"  ///
+>                                                   5"Unstable Angina" ///
+>                                                   6"Epilepsy"
+
+. label value disease_case_comb disease_case_comb                 
+
+. 
+. 
+. 
+. 
+. 
+. gen disease_case1=0
+
+. gen disease_case2=0
+
+. gen disease_case3=0
+
+. gen disease_case4=0
+
+. gen disease_case5=0
+
+. gen disease_case6=0
+
+. 
+. replace disease_case1=1 if disease_case_comb==1
+(383 real changes made)
+
+. 
+. replace disease_case2=1 if disease_case_comb==2
+(791 real changes made)
+
+. 
+. replace disease_case3=1 if disease_case_comb==3
+(383 real changes made)
+
+. 
+. replace disease_case4=1 if disease_case_comb==4
+(792 real changes made)
+
+. 
+. replace disease_case5=1 if disease_case_comb==5
+(408 real changes made)
+
+. 
+. replace disease_case6=1 if disease_case_comb==6
+(409 real changes made)
+
+. 
+. 
+. 
+. label var disease_case1 "Pharyngitis"
+
+. 
+. label var disease_case2 "Diarrhea"
+
+. 
+. 
+. label var disease_case3 "Hypertension"
+
+. 
+. 
+. label var disease_case4 "Asthma"
+
+. 
+. label var disease_case5 "Unstable Angina"
+
+. 
+. label var disease_case6 "Epilepsy"
+
+. 
+.  
+.  
+.  
+.  
+. save "/Users/amandali/Dropbox/GHEP-Yunnan Analysis/Yunnan Drug Data/data_file/vig_d
+> oc_level/Yunnan_deidentified_vig",replace
+file /Users/amandali/Dropbox/GHEP-Yunnan Analysis/Yunnan Drug Data/data_file/vig_doc_
+> level/Yunnan_deidentified_vig.dta saved
+
+. 
+. 
+. 
+. 
+. 
+. 
+. clear all
+
+. capture log close
